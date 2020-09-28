@@ -11,7 +11,7 @@
 
     /* Style the body */
     body {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: Verdana;
       margin: 0;
     }
 
@@ -20,7 +20,7 @@
       padding: 60px;
       text-align: center;
       background: #000000;
-      color: #f0d5cc;
+      color: #62d1ae;
     }
 
     img {
@@ -47,19 +47,22 @@
       flex-wrap: wrap;
     }
 
-    /* Create two unequal columns that sits next to each other */
+    /* Create two unequal columns that sit next to each other */
     /* Sidebar/left column */
     .side {
-      flex: 30%;
-      background-color: #f0d5cc;
-      padding: 30px;
+      flex: 25%;
+      background-color: #62d1ae;
+      padding: 35px;
+      color: #fffeeb;
+      text-align: center;
     }
 
     /* Main column */
     .main {
-      flex: 70%;
-      background-color: white;
-      padding: 40px;
+      flex: 75%;
+      background-color: #fffeeb;
+      padding: 50px;
+      color: #545c58;
     }
 
     /* Footer */
@@ -67,7 +70,22 @@
       padding: 20px;
       text-align: center;
       background: #000000;
-      color: #f0d5cc;
+      color: white;
+    }
+
+    h5 {
+      margin: 8px;
+      padding: 2px;
+    }
+
+    h4 {
+      margin: 8px;
+      padding: 2px;
+    }
+
+    p {
+      margin: 8px;
+      padding: 2px;
     }
 
     #myBtn {
@@ -79,7 +97,7 @@
       font-size: 18px;
       border: none;
       outline: none;
-      background-color: #f0d5cc;
+      background-color: #62d1ae;
       color: white;
       cursor: pointer;
       padding: 15px;
@@ -87,7 +105,7 @@
     }
 
       #myBtn:hover {
-        background-color: #f0d3cc;
+        background-color: #b9edca;
       }
 
     /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -95,7 +113,11 @@
       .row {
         flex-direction: column;
       }
+
+      /*Footer links and icons*/
+    
     }
+
   </style>
 </head>
 <body>
@@ -107,11 +129,11 @@
   </div>
 
 
-  <!-- The flexible grid (content) -->
+  <!-- The flexible grid and side column -->
   <div class="row">
     <div class="side">
       <img src="https://i.imgur.com/LVkOdeF.jpg" alt="kuva1.jpg" style="width:287px;height:287px;">
-      <h2>PROFIILI</h2>
+      <h3>PROFIILI</h3>
       <p>
         Toimelias ja täsmällinen
         ongelmanratkaisija tavoitteenaan ura
@@ -126,36 +148,32 @@
       </p>
       <br>
       <br>
-      <h2>KIELITAITO </h2>
+      <h3>KIELITAITO </h3>
       <p>
-        <ul>
-          <li>Suomi: äidinkieli</li>
-          <li>Englanti: sujuva C1</li>
-          <li>Espanja: hyvä B2</li>
-          <li>Ruotsi: tyydyttävä A2</li>
-          <li>Saksa: alkeet</li>
-        </ul>
+          Suomi: äidinkieli<br>
+          Englanti: sujuva C1<br>
+          Espanja: hyvä B2<br>
+          Ruotsi: tyydyttävä A2<br>
+          Saksa: alkeet
       </p>
       <br>
       <br>
-      <h2>IT-TAIDOT</h2>
-      <p>
-        <ul>
-          <li>Ohjelmoinnin alkeet (html, CSS, JS, C#, Python)</li>
-          <li>Git-versionhallinnan alkeet</li>
-          <li>Unity-pelimoottorin alkeet</li>
-          <li>Markkinointi sosiaalisessa mediassa</li>
-          <li>Websivujen ylläpito (Wordpress ja html)</li>
-          <li>Uutiskirjeet (Gruppo Mailer ja MailChimp)</li>
-          <li>CRM-ohjelmat (Gruppo)</li>
-          <li>Museoiden kokoelmanhallintaohjelma MUUSA</li>
-          <li>Microsoft Office</li>
-          <li>AV-laitteet (video- ja äänentoisto)</li>
-        </ul>
+      <h3>IT-TAIDOT</h3>
+      <p>Ohjelmoinnin alkeet:<br>
+         (html, CSS, JS, C#, Python)<br>
+          Git-versionhallinnan alkeet<br>
+          Unity-pelimoottorin alkeet<br>
+          Microsoft Office<br>
+        Markkinointi sosiaalisessa mediassa<br>
+          Websivujen ylläpito (Wordpress ja html)<br>
+          Uutiskirjeet (Gruppo Mailer ja MailChimp)<br>
+          CRM-ohjelmat (Gruppo)<br>
+          Museoiden kokoelmanhallintaohjelma MUUSA<br>
+          AV-laitteet (video- ja äänentoisto)
       </p>
       <br>
       <br>
-      <h2>PALKINNOT JA JÄSENYYDET</h2>
+      <h3>PALKINNOT JA JÄSENYYDET</h3>
       <br>
       <p>
         <h4>Best Final Year Dissertation</h4>
@@ -163,10 +181,12 @@
         Extroversion on Facebook (2011). The Welsh Branch of The British Psychological Society.
         <br>
         <br>
+        <br>
         <h4>Hallituksen jäsen</h4>
         <h5><i>Pro Forum Box | 2015 - 2018</i></h5>
         Sponsoreiden hankinta, varainhankinta, jäsenpalvelut.
         Jäseniltojen ja retkien tuottaminen.
+        <br>
         <br>
         <br>
         <h4>Hallituksen jäsen</h4>
@@ -180,23 +200,22 @@
       <br>
       <br>
     </div>
-
+    <!--Main column-->
     <div class="main">
-      <h2>KOKEMUS</h2>
-      <h3>Asiakasneuvoja</h3>
-      <h4><i>Releasy Customer Management, Barcelona | 01/2020 - 06/2020</i></h4>
+      <h3>KOKEMUS</h3>
+      <br>
+      <h4>Asiakasneuvoja</h4>
+      <h5><i>Releasy Customer Management, Barcelona | 01/2020 - 06/2020</i></h5>
       <p>
-        Asiakaspalvelu puhelimitse ja sähköpostitse. Ongelmanratkaisua toimituksiin,
-        laskutukseen sekä reklamaatioihin liittyen. Yhteistyötä alihankkijoiden
-        ja kuriirikumppanien kanssa. Oman työtehokkuuden ja -laadun analysointi: saavutin
-        viikottain erittäin korkean asiakastyytyväisyystason.
+        Asiakaspalvelu puhelimitse ja sähköpostitse. Ongelmanratkaisua verkkokaupan toimituksiin, laskutukseen sekä reklamaatioihin liittyen.
+        Yhteistyötä alihankkijoiden ja kuriirikumppanien kanssa. Oman työtehokkuuden ja -laadun analysointi: saavutin viikottain erittäin korkean asiakastyytyväisyystason.
       </p>
       <br>
       <br>
-      <h3>Näyttelykoordinaattori ja Galleria-assistentti</h3>
-      <h4><i>Osuuskunta Forum Box, Helsinki | 02/2012 - 08/2018</i></h4>
+      <h4>Näyttelykoordinaattori ja Galleria-assistentti</h4>
+      <h5><i>Osuuskunta Forum Box, Helsinki | 02/2012 - 08/2018</i></h5>
       <p>
-        Asiakaspalvelu,teosmyynti ja toimistorutiineista vastaaminen.
+        Asiakaspalvelu, teosmyynti ja toimistorutiineista vastaaminen.
         Gallerian tilavuokratoiminnan tuottaminen itsenäisesti kuuden vuoden ajan, lisäten
         myyntituloja ja markkinointia parantaen. Assistenttien ja harjoittelijoiden perehdytys.
         Kuukausittaisten näyttelyiden, tapahtumien ja yhteistyöprojektien itsenäinen
@@ -206,49 +225,49 @@
         laskuja, sopimuksia sekä muita asiakirjoja ja sähköistä sisältöä englanniksi. Opastettujen kierrosten tuottaminen suomeksi ja englanniksi.
       </p>
       <br>
-      <br>
-      <h3>Museoassistentti</h3>
-      <h4><i>Lahden Taidemuseo, Lahti | 10 - 12/2011</i></h4>
+      <h4>Museoassistentti</h4>
+      <h5><i>Lahden Taidemuseo, Lahti | 10 - 12/2011</i></h5>
       <p>
         Näyttelyopastusten suunnittelu ja toteuttaminen itsenäisesti eri ikäryhmille. Museon
         julistekokoelman luettelointi Muusaan. Muusa-koulutuksen suorittaminen.
       </p>
       <br>
       <br>
-      <h2>KOULUTUS</h2>
-      <h3>Mimmit Koodaa Bootcamp</h3>
-      <h4><i>Saranen Consulting | 09/ - 10/2020</i></h4>
+      <h3>KOULUTUS</h3>
+      <br>
+      <h4>Mimmit Koodaa Bootcamp</h4>
+      <h5><i>Saranen Consulting | 09/ - 10/2020</i></h5>
       <p>
         Web-ohjelmoinnin perusteet, tutustuminen ohjelmointikieliin, ohjelmistokehyksiin
         (Angular, React, Vue) sekä NodeJS-ympäristöön ja Git-versionhallintaan.
       </p>
       <br>
       <br>
-      <h3>Art History & Psychology (BA Hons.)</h3>
-      <h4><i>Swansea Metropolitan University (Swansea, UK) | 2008 - 2011</i></h4>
+      <h4>Art History & Psychology (BA Hons.)</h4>
+      <h5><i>Swansea Metropolitan University (Swansea, UK) | 2008 - 2011</i></h5>
       <p>
         Nykytaiteen tutkimukseen ja sosiaalipsykologiaan painottunut kaksoistutkinto. Kandidaatintutkielmat identiteetin tutkimuksesta taiteessa sekä extroversiosta
-        sosiaalisessa ja mediassa. Palkinto psykologian kandidaatintutkielmasta vuosikurssin
+        sosiaalisessa mediassa. Palkinto psykologian kandidaatintutkielmasta vuosikurssin
         parhaana (The Welsh Branch of The BPS).
       </p>
       <br>
       <br>
-      <h3>Ylioppilastutkinto: magna cum laude</h3>
-      <h4><i>Lahden Lyseon lukio (Lahti) | 2003 - 2006</i></h4>
+      <h4>Ylioppilastutkinto: magna cum laude</h4>
+      <h5><i>Lahden Lyseon lukio (Lahti) | 2003 - 2006</i></h5>
       <br>
       <br>
       <br>
-      <h2>MUU KOKEMUS</h2>
-      <h3>Vapaaehtoinen projektityöntekijä</h3>
-      <h4><i>LocTeam Inc. (Barcelona) | 2019</i></h4>
-      <p>
-        Puheentunnistusohjelman ja koneoppimisohjelmiston kehityksessä avustaminen
+      <h3>MUU KOKEMUS</h3>
+      <br>
+      <h4>Vapaaehtoinen projektityöntekijä</h4>
+      <h5><i>LocTeam Inc. (Barcelona) | 2019</i></h5>
+      <p>Puheentunnistusohjelman ja koneoppimisohjelmiston kehityksessä avustaminen
         projektiluontoisesti.
       </p>
       <br>
       <br>
-      <h3>Joukkueenjohtaja ja talousvastaava</h3>
-      <h4><i>Hakaniemen Säbättäret | 2012 - 2018</i></h4>
+      <h4>Joukkueenjohtaja ja talousvastaava</h4>
+      <h5><i>Hakaniemen Säbättäret | 2012 - 2018</i></h5>
       <p>
         Amatöörisählyjoukkueen johtaminen, pelaajarekrytointi sekä joukkueen
         taloudesta vastaaminen. Sosiaalisen toiminnan organisointi.
@@ -258,16 +277,14 @@
 
   <!-- Footer -->
   <div class="footer">
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <h4>Suosittelijoiden yhteystiedot pyynnöstä</h4>
-  </div>
+      <a href="#">Link</a>
+      <h5>Suosittelijoiden yhteystiedot pyynnöstä</h5>
+    </div>
 
+  <!-- Scroll back to top button function and footer contact icon buttons--> 
   <button onclick="topFunction()" id="myBtn" title="Takaisin alkuun">Alkuun</button>
   <script>
-    //Get the button
+    
     var mybutton = document.getElementById("myBtn");
 
    // When the user scrolls down 20px from the top of the document, show the button
@@ -286,6 +303,7 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+
   </script>
 </body>
 </html>
