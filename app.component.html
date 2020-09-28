@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    @import url(https://fonts.googleapis.com/css?family=Lato);
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
     * {
       box-sizing: border-box;
     }
@@ -71,6 +74,7 @@
       text-align: center;
       background: #000000;
       color: white;
+      font-size: 32px;
     }
 
     h5 {
@@ -114,8 +118,63 @@
         flex-direction: column;
       }
 
-      /*Footer links and icons*/
-    
+      /*social media buttons*/
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+
+      .footer-social-icons {
+        width: 350px;
+        display: block;
+        margin: 40px;
+      }
+
+      .social-icon {
+        color: #fff;
+        margin-top: 10px;
+        vertical-align: top;
+        display: inline-block;
+      }
+
+      .social-icons a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .fa-linkedin {
+        padding: 10px 14px;
+        -o-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+      }
+
+        .fa-linkedin:hover {
+          background-color: #0073a4;
+        }
+
+      .fa-github {
+        padding: 10px 14px;
+        -o-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        background-color: #322f30;
+      }
+        .fa-github:hover {
+          background-color: #5a32a3;
+        }
+
+      .fa-envelope-square {
+        padding: 10px 14px;
+        background-color: #322f30;
+      }
+
+        .fa-envelope-square:hover {
+          background-color: #fc3903;
+        }
     }
 
   </style>
@@ -125,9 +184,7 @@
   <!-- Header -->
   <div class="header">
     <h1>Miia Takala</h1>
-
   </div>
-
 
   <!-- The flexible grid and side column -->
   <div class="row">
@@ -150,27 +207,29 @@
       <br>
       <h3>KIELITAITO </h3>
       <p>
-          Suomi: äidinkieli<br>
-          Englanti: sujuva C1<br>
-          Espanja: hyvä B2<br>
-          Ruotsi: tyydyttävä A2<br>
-          Saksa: alkeet
+        Suomi: äidinkieli<br>
+        Englanti: sujuva C1<br>
+        Espanja: hyvä B2<br>
+        Ruotsi: tyydyttävä A2<br>
+        Saksa: alkeet
       </p>
       <br>
       <br>
       <h3>IT-TAIDOT</h3>
-      <p>Ohjelmoinnin alkeet:<br>
-         (html, CSS, JS, C#, Python)<br>
-          Git-versionhallinnan alkeet<br>
-          Unity-pelimoottorin alkeet<br>
-          Microsoft Office<br>
+      <p>
+        Ohjelmoinnin alkeet:<br>
+        (html, CSS, JS, C#, Python)<br>
+        Git-versionhallinnan alkeet<br>
+        Unity-pelimoottorin alkeet<br>
+        Microsoft Office<br>
         Markkinointi sosiaalisessa mediassa<br>
-          Websivujen ylläpito (Wordpress ja html)<br>
-          Uutiskirjeet (Gruppo Mailer ja MailChimp)<br>
-          CRM-ohjelmat (Gruppo)<br>
-          Museoiden kokoelmanhallintaohjelma MUUSA<br>
-          AV-laitteet (video- ja äänentoisto)
+        Websivujen ylläpito (Wordpress ja html)<br>
+        Uutiskirjeet (Gruppo Mailer ja MailChimp)<br>
+        CRM-ohjelmat (Gruppo)<br>
+        Museoiden kokoelmanhallintaohjelma MUUSA<br>
+        AV-laitteet (video- ja äänentoisto)
       </p>
+      <br>
       <br>
       <br>
       <h3>PALKINNOT JA JÄSENYYDET</h3>
@@ -225,6 +284,7 @@
         laskuja, sopimuksia sekä muita asiakirjoja ja sähköistä sisältöä englanniksi. Opastettujen kierrosten tuottaminen suomeksi ja englanniksi.
       </p>
       <br>
+      <br>
       <h4>Museoassistentti</h4>
       <h5><i>Lahden Taidemuseo, Lahti | 10 - 12/2011</i></h5>
       <p>
@@ -261,7 +321,8 @@
       <br>
       <h4>Vapaaehtoinen projektityöntekijä</h4>
       <h5><i>LocTeam Inc. (Barcelona) | 2019</i></h5>
-      <p>Puheentunnistusohjelman ja koneoppimisohjelmiston kehityksessä avustaminen
+      <p>
+        Puheentunnistusohjelman ja koneoppimisohjelmiston kehityksessä avustaminen
         projektiluontoisesti.
       </p>
       <br>
@@ -272,14 +333,26 @@
         Amatöörisählyjoukkueen johtaminen, pelaajarekrytointi sekä joukkueen
         taloudesta vastaaminen. Sosiaalisen toiminnan organisointi.
       </p>
+      <br>
+      <br>
     </div>
   </div>
 
   <!-- Footer -->
   <div class="footer">
-      <a href="#">Link</a>
-      <h5>Suosittelijoiden yhteystiedot pyynnöstä</h5>
+    <br>
+    <br>
+    <div class="footer-social-icons">
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/miiatakala/" class="social-icon"> <i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/miiaht/" class="social-icon"> <i class="fa fa-github"></i></a>
+        <a href="mailto:mhtakala@gmail.com" class="social-icon"> <i class="fa fa-envelope-square"></i></a>
+        <br>
+        <br>
+        <br>
+      </div>
     </div>
+  </div>
 
   <!-- Scroll back to top button function and footer contact icon buttons--> 
   <button onclick="topFunction()" id="myBtn" title="Takaisin alkuun">Alkuun</button>
